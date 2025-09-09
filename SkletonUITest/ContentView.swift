@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            UsersView()
+            CardSkeletonWithData()
+            CardSkeletonWithData()
+            CardSkeletonWithData()
         }
         .padding()
     }
