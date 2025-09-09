@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3458C4697C4222467CB68F14 /* Pods_SkletonUITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04A3F86CA953E4A356E8CF0 /* Pods_SkletonUITest.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		722C9E27EC9C0484EACAF558 /* Pods-SkletonUITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkletonUITest.debug.xcconfig"; path = "Target Support Files/Pods-SkletonUITest/Pods-SkletonUITest.debug.xcconfig"; sourceTree = "<group>"; };
 		8425F27A2E6FA14500908F2D /* SkletonUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkletonUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EC6676345B060B9ADEB0D7 /* Pods-SkletonUITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkletonUITest.release.xcconfig"; path = "Target Support Files/Pods-SkletonUITest/Pods-SkletonUITest.release.xcconfig"; sourceTree = "<group>"; };
+		A04A3F86CA953E4A356E8CF0 /* Pods_SkletonUITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkletonUITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3458C4697C4222467CB68F14 /* Pods_SkletonUITest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6287B27DA484D0E148D6EA9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04A3F86CA953E4A356E8CF0 /* Pods_SkletonUITest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8425F2712E6FA14500908F2D = {
 			isa = PBXGroup;
 			children = (
 				8425F27C2E6FA14500908F2D /* SkletonUITest */,
 				8425F27B2E6FA14500908F2D /* Products */,
+				B058033298B06905FE90B808 /* Pods */,
+				6287B27DA484D0E148D6EA9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +63,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B058033298B06905FE90B808 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				722C9E27EC9C0484EACAF558 /* Pods-SkletonUITest.debug.xcconfig */,
+				94EC6676345B060B9ADEB0D7 /* Pods-SkletonUITest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +79,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8425F2852E6FA14600908F2D /* Build configuration list for PBXNativeTarget "SkletonUITest" */;
 			buildPhases = (
+				B852AE04F83E9FC507211D9E /* [CP] Check Pods Manifest.lock */,
 				8425F2762E6FA14500908F2D /* Sources */,
 				8425F2772E6FA14500908F2D /* Frameworks */,
 				8425F2782E6FA14500908F2D /* Resources */,
+				7183002F0D5B2401A5FBDD3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +93,6 @@
 				8425F27C2E6FA14500908F2D /* SkletonUITest */,
 			);
 			name = SkletonUITest;
-			packageProductDependencies = (
-			);
 			productName = SkletonUITest;
 			productReference = 8425F27A2E6FA14500908F2D /* SkletonUITest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +140,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7183002F0D5B2401A5FBDD3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkletonUITest/Pods-SkletonUITest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkletonUITest/Pods-SkletonUITest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkletonUITest/Pods-SkletonUITest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B852AE04F83E9FC507211D9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkletonUITest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8425F2762E6FA14500908F2D /* Sources */ = {
@@ -162,7 +235,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -225,7 +298,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -246,6 +319,7 @@
 		};
 		8425F2862E6FA14600908F2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722C9E27EC9C0484EACAF558 /* Pods-SkletonUITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -273,6 +347,7 @@
 		};
 		8425F2872E6FA14600908F2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EC6676345B060B9ADEB0D7 /* Pods-SkletonUITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

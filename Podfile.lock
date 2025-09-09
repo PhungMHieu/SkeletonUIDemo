@@ -1,0 +1,21 @@
+PODS:
+  - SkeletonUI (2.0.2)
+
+DEPENDENCIES:
+  - SkeletonUI (from `https://github.com/CSolanaM/SkeletonUI.git`)
+
+EXTERNAL SOURCES:
+  SkeletonUI:
+    :git: https://github.com/CSolanaM/SkeletonUI.git
+
+CHECKOUT OPTIONS:
+  SkeletonUI:
+    :commit: f025e9ba5d051374d7344efa8859df5b9399a181
+    :git: https://github.com/CSolanaM/SkeletonUI.git
+
+SPEC CHECKSUMS:
+  SkeletonUI: 8312e30b21b3e5af67a3807ae7da98f500e9c61d
+
+PODFILE CHECKSUM: 77c981e46bb4cc1e316cbe1187667624823a7216
+
+COCOAPODS: 1.16.2
